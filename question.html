@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Kaoser, Do you want to stay one hole night with me baby???😌</h2>
+
+<button id="yesBtn" style="left:45%">Yes</button>
+<button onclick="showMessage()" style="left:55%">No</button>
+
+<script>
+  const yesBtn = document.getElementById("yesBtn");
+
+  // Yes button move korbe
+  yesBtn.addEventListener("mouseover", () => {
+    yesBtn.style.top = Math.random() * 300 + "px";
+    yesBtn.style.left = Math.random() * 300 + "px";
+  });
+
+  // No button e click korle message
+  function showMessage() {
+    alert("Are you sure baby???😁😁 Erpor kntu amake kicu bolish nh😁😁");
+  }
+</script>
+
+</body>
+</html>
